@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux Esecial</title>
+  <meta name="description"
+    content="Página web destinada a brindar información de la oferta académica Linux Esencial dictada por el Departamento de informática en E.F.P N°7." />
+  <meta name="keywords" content="HTML, CSS, Bootstrap" />
+  <meta name="author" content="Ledesma Paula Sabrina" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="./favicon_io/site.webmanifest" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./linuxEsencial.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-ligth">
+    <div class="container-fluid p-2">
+      <a class="navbar-brand col-8" href="#"><img src="./imagenes/imagen_logo.webp" alt="Logo" width="40"
+          height="40" class="d-inline-block"><button class="button" data-text="Awesome">
+          <span class="actual-text">&nbsp;Linux Esencial&nbsp;</span>
+          <span aria-hidden="true" class="hover-text">&nbsp;Linux Esencial&nbsp;</span>
+        </button></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse col-3" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://efp-informatica.netlify.app/"><button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;Inicio&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Inicio&nbsp;</span>
+              </button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://efp-informatica.netlify.app/nosotros"><button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;Nosotros&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Nosotros&nbsp;</span>
+              </button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid contenedor_1 text-bg-dark my-4 p-4">
+    <h1>Linux Esencial</h1>
+    <div class="container">
+      <p>El objetivo de la oferta académica es el formar capacidades y habilidades fundamentales requeridas en el
+        mundo del trabajo y previo para certificaciones superiores en linux.</p>
+        <h2 class="col-6">Temas a desarrollar:</h2>
+        <ul class="lista">
+          <li>Configuración e instalación.</li>
+          <li>Líneas de comandos.</li>
+          <li>Entorno.</li>
+          <li>Seguridad.</li>
+          <li>Sistemas de permisos de archivos.</li>
+        </ul>
+    </div>
+  </div>
+  <div class="container">
+    <!-- Carousel -->
+    <div id="demo" class="carousel carousel-dark carousel-fade slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+      </div>
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/imagen_01.webp" alt="imagen_01" class="img-fluid d-block w-50 p-2 mx-auto imagen_carrusel">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/imagen_02.webp" alt="imagen_02" class="img-fluid d-block w-50 p-2 mx-auto imagen_carrusel">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/imagen_03.webp" alt="imagen_03" class="img-fluid d-block w-50 p-2 mx-auto imagen_carrusel">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/imagen_04.webp" alt="imagen_04" class="img-fluid d-block w-50 p-2 mx-auto imagen_carrusel">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/imagen_05.webp" alt="imagen_05" class="img-fluid d-block w-50 p-2 mx-auto imagen_carrusel">
+        </div>
+      </div>
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center mx-2 p-2">
+    <div class="card bg-dark col-sm-12 col-xl-3 mx-2" style="width: 300px;">
+      <img src="./imagenes/imagen_fondo.webp" class="card-img" alt="imagen_tarjetas" style="width: 300px;">
+      <div class="card-img-overlay m-3">
+        <h2 class="card-title text-center">Horario</h2>
+        <p class="card-text">Curso: Cuatrimestral (Marzo-Junio).</p>
+        <p class="card-text">Aula 17.</p>
+        <p class="card-text">Turno noche.</p>
+        <p class="card-text">Horas totales: 96 horas.</p>
+        <p class="card-text">Lunes / Miércoles : 18:00 a 22:00.</p>
+        <p class="card-text">Martes / Miércoles : 18:00 a 22:00.<p>
+      </div>
+    </div>
+    <div class="card bg-dark col-sm-12 col-xl-3 mx-2" style="width: 300px;">
+      <img src="./imagenes/imagen_fondo.webp" class="card-img" alt="imagen_tarjetas" style="width: 300px;">
+      <div class="card-img-overlay m-3">
+        <h2 class="card-title text-center">Docente</h2>
+        <p class="card-text">Cochia, Ariel.</p>
+      </div>
+    </div>
+    <div class="card bg-dark col-sm-12 col-xl-3 mx-2" style="width: 300px;">
+      <img src="./imagenes/imagen_fondo.webp" class="card-img" alt="imagen_tarjetas" style="width: 300px;">
+      <div class="card-img-overlay m-3">
+        <h2 class="card-title text-center">Requisitos</h2>
+        <ul class="lista">
+          <li><p class="card-text">Fotocopia de DNI.</p></li>
+          <li><p class="card-text">Boleta de servicio o constancia de domicilio.</p></li>
+          <li><p class="card-text">Certificado de estudios.</p></li>
+          <li><p class="card-text">Constancia de salud.</p></li>
+          <li><p class="card-text">Constancia bucodental.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+<footer class="footer container-fluid bg-ligth my-4 p-4">
+  <div class="row p-2">
+    <div class="col-4 text-center">
+      <img src="./imagenes/imagen_logo.webp" alt="imagen_logo" width="40" height="40"
+        class="mx-auto d-inline-block">
+      Linux Esencial
+    </div>
+    <div class="col-4 text-start">
+      <p>Desarollado por Ledesma Sabrina</p>
+      <p>Docente: Fernández Mario</p>
+    </div>
+    <div class="col-4 text-start">
+      <p>Desarrollo Web Front End Junior</p>
+      <p>E.F.P N°7</p>
+      <a href="https://www.instagram.com/efp7ok" target="_blank"><img src="./imagenes/logo_instagram.webp"
+          alt="icono_instagram" width="30" height="30" /></a>
+      <a href="https://www.facebook.com/escfp7/" target="_blank"><img src="./imagenes/logo_facebook.webp"
+          alt="icono_facebook" width="30" height="30" /></a>
+    </div>
+  </div>
+</footer>
+
+</html>

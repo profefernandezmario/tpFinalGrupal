@@ -1,0 +1,103 @@
+body {
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.contenedor_1 {
+  background-image: url(./imagenes/imagen_fondo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.imagen_carrusel {
+  animation-name: transicionimagencarrusel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  filter: blur(1px);
+}
+@keyframes transicionimagencarrusel {
+  from {
+      filter: blur(1px);
+      transform: scale(0.8, 0.8);
+  }
+
+  to {
+      filter: blur(0px);
+      transform: scale(1.0, 1.0);
+  }
+}
+h1 {
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.6) 1px 1px 1px;
+  color: #37FF8B;
+  font-family: 'Courier New', Courier, monospace;
+}
+h2 {
+  text-shadow: rgba(255,255,255,0.6) 1px 1px 1px;
+  color: #37FF8B;
+  font-family: 'Courier New', Courier, monospace;
+}
+.card-title {
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.6) 1px 1px 1px;
+  color: #37FF8B;
+  font-family: 'Courier New', Courier, monospace;
+}
+.lista {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+p {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+.footer {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* From Uiverse.io by satyamchaudharydev */ 
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 1rem(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
